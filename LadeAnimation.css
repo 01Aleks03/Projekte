@@ -1,0 +1,7 @@
+#ladebalken {
+    display: block;
+    background: red;
+    width: 1em;
+    height: 1em;
+    border: 2px solid darkred;
+}

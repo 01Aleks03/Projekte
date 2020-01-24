@@ -1,0 +1,9 @@
+body{ background-color: black; }
+h1 { color: green; font-size: 300%; }
+button {
+	font-size: 1.2em;
+	width: 12em;
+	height:3em ;
+}
+
+output{font-style: italic; font-size: 2em;}

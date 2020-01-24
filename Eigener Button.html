@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Übung</title>
+    </head>
+    <body>
+        <h1>Klick und ein Text</h1>
+        <main>
+            <button id="button1">Neuer Absatz!</button>
+            <button id="button2">Neuer Button wird erstellt</button>
+            <button id="button3">Selbst genbauter Button </button>
+            <div id="textblock">
+                <p>Von hier gehen die Absätze</p>
+            </div>
+        </main>
+        <script>
+            'use strict';
+            document.addEventListener('DOMContentLoaded',function(){
+                var text1 = 'Neuer Absatz!';
+                var text2 = 'Neuer Button!';
+                var text3 = 'Text vom neuen Button!';
+
+                document.getElementById('button1').addEventListener('click',function(){createElement('#textblock','p',text1);});
+                document.getElementById('button2').addEventListener('click',function(){createElement('#textblock','button',text2);});
+                document.getElementById('button3').addEventListener('click',function(){createElement('#textblock','p',text3);});
+
+                function createElement(parent,elem,content){
+                    var container= document.querySelector(parent);
+                    var newElm = document.createElement(elem);
+                    newElm .innerText = content;
+                    container.appendChild(newElm);
+
+                }
+        
+        });    
+        </script>
+    </body>
+</html>
