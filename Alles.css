@@ -1,0 +1,37 @@
+body{ background-color: black; }
+h1,h2,h3 { color: green; font-size: 200%; }
+button {
+	font-size: 1.2em;
+	width: 12em;
+	height:3em ;
+}
+output{font-style: italic; font-size: 2em;}
+
+
+
+
+
+#ladebalken {
+    display: block;
+    background: red;
+    width: 1em;
+    height: 1em;
+    border: 2px solid darkred;
+}
+
+
+
+p {
+	width: 330px;
+	height: 230px;
+	bordeR: 1px solid;
+}
+
+#circle{
+    display: block;
+    background: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid darkred;
+}
